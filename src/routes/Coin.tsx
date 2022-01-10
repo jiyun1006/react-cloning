@@ -7,7 +7,7 @@ const Title = styled.h1`
 
 function Coin() {
     const { coinId } = useParams();
-    return <Title>코인</Title>;
+    return <Title>코인: {coinId}</Title>;
 }
 
 export default Coin;
