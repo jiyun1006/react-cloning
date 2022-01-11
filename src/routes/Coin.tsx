@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import { useEffect, useState } from 'react';
-import { Link, useMatch } from 'react-router-dom';
+import { Link, Outlet, useMatch } from 'react-router-dom';
 import { useLocation, useParams, Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Chart from './Chart';
@@ -195,10 +195,11 @@ function Coin() {
               <Link to="price">Price</Link>
             </Tab>
           </Tabs>
-          <Routes>
-            <Route path="price" element={<Price />} />
-            <Route path="chart" element={<Chart />} />
-          </Routes>
+          {/* <Routes> */}
+          {/* <Route path="price" element={<Price />} />
+            <Route path="chart" element={<Chart />} /> */}
+          {/* </Routes> */}
+          <Outlet />
         </>
       )}
     </Container>
