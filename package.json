@@ -26,16 +26,16 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-     "extends": ["react-app", "airbnb"],
-     "rules":{
-       "import/extensions": "off",
-       "react/react-in-jsx-scope": "off",
-       "react/jsx-filename-extension": "off",
-       "camelcase":"off"
-
-
-
-     }
+    "extends": [
+      "react-app",
+      "airbnb"
+    ],
+    "rules": {
+      "import/extensions": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-filename-extension": "off",
+      "camelcase": "off"
+    }
   },
   "browserslist": {
     "production": [
